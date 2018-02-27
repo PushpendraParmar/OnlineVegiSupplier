@@ -19,10 +19,6 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FaqComponent } from './faq/faq.component';
 
-
-import { ProductModel  } from './Model/ProductModel';
-import { PRODTCTS  } from './MocData/moc-products';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,18 +34,13 @@ import { PRODTCTS  } from './MocData/moc-products';
     ProductsComponent,
     ProductDetailsComponent,
     AboutusComponent,
-    FaqComponent,
-
-
-//    ProductModel,
-//    PRODTCTS
+    FaqComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     CONST_ROUTING
-    //ProductModel
   ],
   providers: [],
   bootstrap: [AppComponent]

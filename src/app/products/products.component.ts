@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PRODTCTS } from '../MocData/moc-products';
 
 @Component({
   selector: 'app-products',
@@ -8,14 +7,9 @@ import { PRODTCTS } from '../MocData/moc-products';
 })
 export class ProductsComponent implements OnInit {
 
- products=PRODTCTS;
-
-  constructor() {
-
-   }
+  constructor() { }
 
   ngOnInit() {
-
   }
 
 }
