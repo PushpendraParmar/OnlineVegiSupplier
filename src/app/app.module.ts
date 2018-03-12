@@ -18,7 +18,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FaqComponent } from './faq/faq.component';
-
+import { SharedService } from "./shared.service";
 
 import { ProductModel  } from './Model/ProductModel';
 import { PRODTCTS  } from './MocData/moc-products';
@@ -51,7 +51,7 @@ import { PRODTCTS  } from './MocData/moc-products';
     CONST_ROUTING
     //ProductModel
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
