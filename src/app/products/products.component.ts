@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 //import { PRODTCTS } from '../MocData/moc-products';
 import { SharedService } from "./../shared.service";
 import{ProductNode} from './ProductNode';
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -12,7 +13,6 @@ export class ProductsComponent implements OnInit {
  products: IProduct[]=[];
  
   
-
   constructor(private _sharedService: SharedService) {
 	 
   }
