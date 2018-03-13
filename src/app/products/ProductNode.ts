@@ -1,3 +1,5 @@
+import { IProduct } from './IProduct';
+
 export class ProductNode implements IProduct{
 
 	name : string;

@@ -10,7 +10,7 @@ import{ProductNode} from './ProductNode';
 })
 export class ProductsComponent implements OnInit {
 
- products: IProduct[]=[];
+ products: ProductNode[]=[];
  
   
   constructor(private _sharedService: SharedService) {
