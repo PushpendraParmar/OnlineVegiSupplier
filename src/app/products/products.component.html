@@ -5,9 +5,9 @@
       <div class="row">
         <div class="col-xs-12">
           <ul>
-            <li class="home"> <a title="Go to Home Page" href="index.html">Home</a><span>&raquo;</span></li>
-            <li class=""> <a title="Go to Home Page" href="shop_grid.html">Women </a><span>&raquo;</span></li>
-            <li><strong>Clothing</strong></li>
+            <li class="home"> <a title="Go to Home Page" [routerLink]="['/Home']">Home</a><span>&raquo;</span></li>
+            <!-- <li class=""> <a title="Go to Home Page" href="shop_grid.html">Women </a><span>&raquo;</span></li> -->
+            <li><strong>Shop</strong></li>
           </ul>
         </div>
       </div>
@@ -59,18 +59,20 @@
                       <div class="product-item">
                         <div class="item-inner">
                           <div class="product-thumbnail">
-                            <div class="btn-quickview"> <a [routerLink]="['/ProductDetails']" href="quick_view.html"><span>Quick View</span></a></div>
-                            <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo" src="assets/images/products/{{item.imageName}}" alt=""></a> </div>
+                            <div class="btn-quickview"> 
+                              <a [routerLink]="['/ProductDetails']" href="quick_view.html"><span>Quick View</span></a>
+                            </div>
+                            <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo" src="assets/images/products/{{item.imagePath}}" alt=""></a> </div>
                           <div class="pro-box-info">
                             <div class="item-info">
                               <div class="info-inner">
-                                <div class="item-title"> <a title="{{item.name}}" [routerLink]="['/ProductDetails']">{{item.name}} </a> </div>
+                                <div class="item-title"> <a title="{{item.productName}}" [routerLink]="['/ProductDetails']">{{item.productName}} </a> </div>
                                 <div class="item-content">
                                   <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
                                   <div class="item-price">
                                     <div class="price-box">
-                                      <p class="special-price"> <span class="price-label">Special Price</span> <span class="price"> ${{item.price}} </span> </p>
-                                      <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price"> ${{item.price}} </span> </p>
+                                      <p class="special-price"> <span class="price-label">Special Price</span> <span class="price"> ${{item.productPrice}} </span> </p>
+                                      <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price"> ${{item.oldProductPrice}} </span> </p>
                                     </div>
                                   </div>
                                 </div>

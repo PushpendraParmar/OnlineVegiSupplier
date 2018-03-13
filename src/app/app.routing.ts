@@ -11,6 +11,8 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FaqComponent } from './faq/faq.component';
+import { ReturnPolicyComponent } from './return-policy/return-policy.component';
+import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
 
 const MAIN_MENU_ROUTES: Routes=[
     { path:'',redirectTo:'/Home',pathMatch:'full' },
@@ -23,7 +25,9 @@ const MAIN_MENU_ROUTES: Routes=[
     { path:'Products',component:ProductsComponent },
     { path:'ProductDetails',component:ProductDetailsComponent },
     { path:'Aboutus',component:AboutusComponent },
-    { path:'Faq',component:FaqComponent }
+    { path:'Faq',component:FaqComponent },
+    { path:'ReturnPolicy',component:ReturnPolicyComponent },
+    { path:'Terms',component:TermsConditionsComponent }
 
 ];
 

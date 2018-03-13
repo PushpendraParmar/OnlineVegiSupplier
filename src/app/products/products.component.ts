@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from "./../shared.service";
 import{ProductNode} from './ProductNode';
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -11,7 +12,6 @@ export class ProductsComponent implements OnInit {
  products: ProductNode[]=[];
  
   
-
   constructor(private _sharedService: SharedService) {
 	 
   }
