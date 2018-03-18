@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+//import { PRODTCTS } from '../MocData/moc-products';
 import { SharedService } from "./../shared.service";
-import{ProductNode} from './ProductNode';
+import { ProductNode } from './ProductNode';
 
 @Component({
   selector: 'app-products',
@@ -21,10 +22,10 @@ export class ProductsComponent implements OnInit {
       .subscribe(
        lstresult => {
 		   for(let i=0;i<2;i++){
-			this.products[i] = new ProductNode();
-			this.products[i].name =lstresult[i]["name"]; 
-			this.products[i].price =lstresult[i]["price"];
-			this.products[i].imageName =lstresult[i]["imageName"];
+          this.products[i] = new ProductNode();
+          this.products[i].name =lstresult[i]["name"]; 
+          this.products[i].price =lstresult[i]["price"];
+          this.products[i].imageName =lstresult[i]["imageName"];
 		   }
       },
       error => {
@@ -36,7 +37,9 @@ export class ProductsComponent implements OnInit {
   }
   
   ngOnInit() {
+//this.products = this.callProductService();
 	this.callProductService();
+
   }
 
 }
