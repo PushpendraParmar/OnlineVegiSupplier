@@ -24,6 +24,7 @@ import { ProductModel  } from './Model/ProductModel';
 import { PRODTCTS  } from './MocData/moc-products';
 import { ReturnPolicyComponent } from './return-policy/return-policy.component';
 import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { TermsConditionsComponent } from './terms-conditions/terms-conditions.co
     FaqComponent,
     ReturnPolicyComponent,
     TermsConditionsComponent,
+    LoginComponent,
 
 
 //    ProductModel,

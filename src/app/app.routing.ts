@@ -13,21 +13,23 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { FaqComponent } from './faq/faq.component';
 import { ReturnPolicyComponent } from './return-policy/return-policy.component';
 import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
+import { LoginComponent } from './login/login.component';
 
 const MAIN_MENU_ROUTES: Routes=[
-    { path:'',redirectTo:'/Home',pathMatch:'full' },
-    { path:'Home', component: HomeComponent },
-    { path:'WishList',component: WishListComponent },
-    { path:'LoginSignUp',component:LoginSignUpComponent },
-    { path:'Contact',component:ContactComponent },
-    { path:'ShoppingCart',component:ShoppingCartComponent },
-    { path:'Checkout',component:CheckoutComponent },
-    { path:'Products',component:ProductsComponent },
-    { path:'ProductDetails',component:ProductDetailsComponent },
-    { path:'Aboutus',component:AboutusComponent },
-    { path:'Faq',component:FaqComponent },
-    { path:'ReturnPolicy',component:ReturnPolicyComponent },
-    { path:'Terms',component:TermsConditionsComponent }
+    { path:'',redirectTo:'/home',pathMatch:'full' },
+    { path:'home', component: HomeComponent },
+    { path:'wishList',component: WishListComponent },
+    { path:'loginSignUp',component:LoginSignUpComponent },
+    { path:'contact',component:ContactComponent },
+    { path:'shoppingCart',component:ShoppingCartComponent },
+    { path:'checkout',component:CheckoutComponent },
+    { path:'products',component:ProductsComponent },
+    { path:'productDetails',component:ProductDetailsComponent },
+    { path:'aboutus',component:AboutusComponent },
+    { path:'faq',component:FaqComponent },
+    { path:'returnPolicy',component:ReturnPolicyComponent },
+    { path:'terms',component:TermsConditionsComponent },
+    { path:'login',component:LoginComponent }
 
 ];
 
