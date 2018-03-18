@@ -21,7 +21,7 @@ const MAIN_MENU_ROUTES: Routes=[
     { path:'wishList',component: WishListComponent },
     { path:'loginSignUp',component:LoginSignUpComponent },
     { path:'contact',component:ContactComponent },
-    { path:'shoppingCart',component:ShoppingCartComponent },
+    { path:'shoppingcart',component:ShoppingCartComponent },
     { path:'checkout',component:CheckoutComponent },
     { path:'products',component:ProductsComponent },
     { path:'productDetails',component:ProductDetailsComponent },

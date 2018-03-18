@@ -25,6 +25,7 @@ import { PRODTCTS  } from './MocData/moc-products';
 import { ReturnPolicyComponent } from './return-policy/return-policy.component';
 import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
 import { LoginComponent } from './login/login.component';
+import { MiniCartComponent } from './mini-cart/mini-cart.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { LoginComponent } from './login/login.component';
     ReturnPolicyComponent,
     TermsConditionsComponent,
     LoginComponent,
+    MiniCartComponent,
 
 
 //    ProductModel,
