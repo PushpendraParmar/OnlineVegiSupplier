@@ -36,35 +36,40 @@
                 </ul>
                 <br/>
                 <ul class="store_info">
-                  <li><i class="fa fa-home"></i>7064 Lorem Ipsum Vestibulum 666/13</li>
+                  <li><i class="fa fa-home"></i>Door No. 2-2-186/18/6, Ramakrishna Nagar, Amberpet, Hyderabad, Telangana 500013.</li>
                   <li><i class="fa fa-phone"></i><span>+ 012 315 678 1234</span></li>
                   <li><i class="fa fa-fax"></i><span>+39 0035 356 765</span></li>
-                  <li><i class="fa fa-envelope"></i>Email: <span><a href="mailto:support@justtheme.com">support@justthemevalley.com</a></span></li>
+                  <li><i class="fa fa-envelope"></i>Email: <span><a href="mailto:pranasuhita@gmail.com">pranasuhita@gmail.com</a></span></li>
                 </ul>
               </div>
               <div class="col-sm-6">
                 <h3 class="page-subheading">Make an enquiry</h3>
-                <div class="contact-form-box">
-                  <div class="form-selector">
-                    <label>Name</label>
-                    <input type="text" class="form-control input-sm" id="name" />
+                <form #enquiryForm="ngForm" (ngSubmit)="saveEnquiry(enquiryForm)">
+                  <div class="contact-form-box">
+                    <div class="form-selector">
+                      <label for="email">Name</label>
+                      <input type="text" [(ngModel)]="Name" name="Name" class="form-control input-sm" id="name" />
+                    </div>
+                    <div class="form-selector">
+                      <label for="email">Email</label>
+                      <input type="text" [(ngModel)]="Email" name="Email" class="form-control input-sm" id="email" />
+                    </div>
+                    <div class="form-selector">
+                      <label for="contact">Phone</label>
+                      <input type="text" [(ngModel)]="Contact" name="Contact"  class="form-control input-sm" id="contact" />
+                    </div>
+                    <div class="form-selector">
+                      <label for="message">Message</label>
+                      <textarea class="form-control input-sm" [(ngModel)]="Message" name="Message" rows="10" id="message"></textarea>
+                    </div>
+                    <div class="form-selector">
+                      <button class="button" type="submit"><i class="fa fa-send"></i>&nbsp; <span>Send Message</span></button>
+                      &nbsp; <a href="#" class="button">Clear</a> </div>
                   </div>
-                  <div class="form-selector">
-                    <label>Email</label>
-                    <input type="text" class="form-control input-sm" id="email" />
-                  </div>
-                  <div class="form-selector">
-                    <label>Phone</label>
-                    <input type="text" class="form-control input-sm" id="phone" />
-                  </div>
-                  <div class="form-selector">
-                    <label>Message</label>
-                    <textarea class="form-control input-sm" rows="10" id="message"></textarea>
-                  </div>
-                  <div class="form-selector">
-                    <button class="button"><i class="fa fa-send"></i>&nbsp; <span>Send Message</span></button>
-                    &nbsp; <a href="#" class="button">Clear</a> </div>
-                </div>
+                </form>
+                    <div>
+                      {{ enquiryForm.value | json}}
+                    </div>
               </div>
             </div>
           </div>
