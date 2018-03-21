@@ -8,7 +8,7 @@
 
 export class ShoppingCartModel{ 
     productName: String;
-    imagePath:String; 
+    imageName:String; 
     productUnitPrice: Number;
     quantity: Number;
     total:Number;

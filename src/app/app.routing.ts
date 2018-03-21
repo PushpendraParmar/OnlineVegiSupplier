@@ -19,7 +19,7 @@ const MAIN_MENU_ROUTES: Routes=[
     { path:'',redirectTo:'/home',pathMatch:'full' },
     { path:'home', component: HomeComponent },
     { path:'wishList',component: WishListComponent },
-    { path:'loginSignUp',component:LoginSignUpComponent },
+    { path:'loginsignup',component:LoginSignUpComponent },
     { path:'contact',component:ContactComponent },
     { path:'shoppingcart',component:ShoppingCartComponent },
     { path:'checkout',component:CheckoutComponent },
