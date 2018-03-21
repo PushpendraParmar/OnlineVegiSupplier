@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //import { PRODTCTS } from '../MocData/moc-products';
-import { SharedService } from "./../shared.service";
+import { ProductService } from "./../services/product.service";
 import { ProductNode } from './ProductNode';
 
 @Component({
@@ -13,12 +13,12 @@ export class ProductsComponent implements OnInit {
  products: ProductNode[]=[];
  
   
-  constructor(private _sharedService: SharedService) {
+  constructor(private _productService: ProductService) {
 	 
   }
 
   callProductService() { 
-     this._sharedService.findProduct()
+     this._productService.findProduct()
       .subscribe(
        lstresult => {
 		   for(let i=0;i<2;i++){

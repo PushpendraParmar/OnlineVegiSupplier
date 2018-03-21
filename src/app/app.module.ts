@@ -18,7 +18,9 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FaqComponent } from './faq/faq.component';
-import { SharedService } from "./shared.service";
+//import { SharedService } from "./services/shared.service";
+import { ProductService } from "./services/product.service";
+
 
 import { ProductModel  } from './Model/ProductModel';
 import { PRODTCTS  } from './MocData/moc-products';
@@ -49,17 +51,14 @@ import { MiniCartComponent } from './mini-cart/mini-cart.component';
     MiniCartComponent,
 
 
-//    ProductModel,
-//    PRODTCTS
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     CONST_ROUTING
-    //ProductModel
   ],
-  providers: [SharedService],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
