@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartItems } from '../MocData/moc-shoppingcart';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingCartComponent implements OnInit {
 
+  cartItems= CartItems;
   constructor() { }
 
   ngOnInit() {
