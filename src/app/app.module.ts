@@ -20,6 +20,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { FaqComponent } from './faq/faq.component';
 //import { SharedService } from "./services/shared.service";
 import { ProductService } from "./services/product.service";
+import { EnquiryService } from "./services/enquiry.service";
 
 
 import { ProductModel  } from './Model/ProductModel';
@@ -58,7 +59,7 @@ import { MiniCartComponent } from './mini-cart/mini-cart.component';
     HttpModule,
     CONST_ROUTING
   ],
-  providers: [ProductService],
+  providers: [ProductService,EnquiryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

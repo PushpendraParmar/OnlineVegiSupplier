@@ -17,7 +17,7 @@ export class ProductsComponent implements OnInit {
 	 
   }
 
-  callProductService() { 
+  getProducts() { 
      this._productService.findProduct()
       .subscribe(
        lstresult => {
@@ -38,7 +38,7 @@ export class ProductsComponent implements OnInit {
   
   ngOnInit() {
 //this.products = this.callProductService();
-	this.callProductService();
+	this.getProducts();
 
   }
 

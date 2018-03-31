@@ -4,8 +4,8 @@ import 'rxjs/Rx';
 import { Observable } from "rxjs";
  
 @Injectable()
-export class ProductService {
-    baseUrl = "http://localhost:8080/food_supplier/product";
+export class EnquiryService {
+    baseUrl = "http://localhost:8080/food_supplier/enquiry";
     constructor(private _http: Http) { }
  
  
@@ -19,12 +19,13 @@ export class ProductService {
   }
 
 
-    findProduct() { 
-        return this._http.get(this.baseUrl+"/products",{headers: this.getHeaders()})
-            .map(response => {
-                { return response.json() };
-            })
-            .catch(error => Observable.throw(error.json()));
+    saveEnquiry(enquiry) { 
+        return this._http.post(this.baseUrl+"/save",enquiry,{headers: this.getHeaders()})
+        .subscribe(response => {
+                 { return response.json() };
+             })
+            //.catch(error => Observable.throw(error.json()));
+        };
     }
  
     
