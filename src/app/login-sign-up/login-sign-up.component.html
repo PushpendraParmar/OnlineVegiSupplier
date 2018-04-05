@@ -42,11 +42,15 @@
               <div class="box-authentication">
                 <h4>Register</h4><p>Create your very own account</p> 											
                 <label for="mobile_register" >Mobile No.<span class="required">*</span></label>
-                <input id="mobile_register" name="mobile" [(ngModel)]="mobile" type="text" class="form-control">
+                <input id="mobile_register" name="ssoId" [(ngModel)]="ssoId" type="text" class="form-control">
                 <label for="name_register">Name<span class="required">*</span></label>
                 <input id="name_register" name="name" [(ngModel)]="name" type="text" class="form-control">									
                 <label for="emmail_register">Email address</label>
                 <input id="emmail_register" name="email" [(ngModel)]="email" type="text" class="form-control">
+                <label for="emmail_register">Password</label>
+                <input id="emmail_register" name="password" [(ngModel)]="password" type="password" class="form-control">
+                <label for="emmail_register">Confirm Password</label>
+                <input id="emmail_register" name="confirmPassword" [(ngModel)]="confirmPassword" type="password" class="form-control">
                 <button class="button" type="submit"><i class="fa fa-send"></i>&nbsp; <span>Register</span></button>
                 <div class="register-benefits">
                       <h5>Sign up today and you will be able to :</h5>

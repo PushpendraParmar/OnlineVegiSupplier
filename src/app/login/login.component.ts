@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms'; 
-import { SharedService } from "./../shared.service";
 
 @Component({
   selector: 'app-login',
@@ -9,7 +8,7 @@ import { SharedService } from "./../shared.service";
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private _sharedService: SharedService) { }
+  constructor() { }
 
   ngOnInit() {
   }

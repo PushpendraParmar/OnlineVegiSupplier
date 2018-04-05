@@ -21,12 +21,12 @@ export class EnquiryService {
 
     saveEnquiry(enquiry) { 
         return this._http.post(this.baseUrl+"/save",enquiry,{headers: this.getHeaders()})
-        .subscribe(response => {
+        .map(response => {
                  { return response.json() };
              })
             //.catch(error => Observable.throw(error.json()));
         };
-    }
+    
  
     
 }
